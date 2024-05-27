@@ -1,0 +1,200 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr 0.25fr 325px;
+    grid-template-rows: 80px 110px 60px 1fr 100px;
+}
+.formcontainer {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 100px 0.25fr 1fr;
+   
+}
+.geslachtcont {
+    display: flex;
+    justify-content: space-between;
+}
+.geboortedatumcont {
+    display: flex;
+    justify-content: space-between;
+}
+.labelR {
+    grid-column: 1;
+    margin-top: 5px;
+}
+.inputR {
+    grid-column: 2;
+    margin-top: 5px;
+    width: 1fr;
+}
+.labelL {
+    grid-column: 4;
+    margin-top: 5px;
+}
+.inputL {
+    grid-column: 5;
+    margin-top: 5px;
+    width: 1fr;
+}
+#Title1 {
+    color: #c414ac;
+    grid-column: 1/6;
+}
+#Title2 {
+    grid-column: 1/4;
+    grid-row: 3;
+    color: #c414ac;
+}
+#Opening {
+    grid-column: 1/4;
+    text-align: justify;
+}
+#End {
+    grid-column: 1/4;
+    text-align: justify;
+    grid-row: 4;
+}
+#Keen {
+    height: 300px;
+    width: 100%;
+    grid-column: 5;
+    grid-row: 2/4;
+    
+}
+#gebdag, #gebdatum, #gebmaand {
+    width: 30.5%;
+}
+#gebmaand {
+    height: 22px;
+}
+#antwoordInput {
+    grid-column: 2/6;
+    height: 90px;
+}
+#verzendInput {
+    grid-column: 4/6;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .container {
+        grid-template-columns: 100px 250px 50px 95px 250px;
+        grid-template-rows: 50px 110px 50px 80px 725px;
+    }
+    .formcontainer {
+        margin-top: 50px;
+        grid-template-rows: repeat(13, 30px) 110px repeat(3, 30px) 100px 30px;
+        grid-template-columns: 100px 250px 50px 95px 250px;
+    }
+#Title1 {
+    font-size: 25px;
+    grid-column: 1/6;
+}
+#Opening {
+    font-size: 18px;
+    grid-column: 1/7;
+    margin-right:10px ;
+}
+#Title2 {
+    font-size: 25px;
+    grid-column: 1/6;
+    grid-row: 3;
+    margin: 0px;
+}
+#End {
+    font-size: 18px;
+    grid-column: 1/6;
+}
+#Keen {
+    grid-column: 1/6;
+    grid-row: 5;
+   width: 100%;
+   height: auto;
+}
+.labelL {
+    grid-column: 1;
+}
+.labelR {
+    grid-column: 1;
+}
+.inputL {
+    grid-column: 1/6;
+    width: 100%;
+}
+.inputR {
+    grid-column: 1/6;
+    width: 100%;
+}
+.geslachtcont {
+    grid-row: 14;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 1;
+    
+}
+.geboortedatumcont {
+    grid-row: 16;
+    grid-column: 1/6;
+}
+#gebdag, #gebdatum, #gebmaand {
+    width: 100%;
+}
+#gebmaand {
+    height: 85%;
+}
+#antwoordInput {
+    grid-row: 18;
+    grid-column: 1/6;
+}
+#verzendInput {
+    grid-column: 1/6;
+    grid-row: 19;
+}
+}
+
+@media only screen and (max-width: 770px) and (min-width: 376px) {
+    .container {
+        grid-template-columns: 80px 250px 50px 95px 250px;
+         grid-template-rows: 80px 110px 80px 1fr 50px;
+    }
+    .formcontainer {
+        grid-template-rows: repeat(8, 30px) 90px 10px 30px;
+    }
+#Title1 {
+    font-size: 27px;
+}
+#Opening {
+    font-size: 15px;
+    grid-column: 1/5;
+}
+#Title2 {
+    font-size: 18px;
+    grid-column: 1/5;
+}
+#Keen {
+margin-left: 10px;
+}
+.labelL {
+ grid-column: 1;
+}
+.labelR {
+    grid-column: 1;
+}
+.inputL {
+    grid-column: 2;
+}
+.inputR {
+    grid-column: 2;
+    width: 600px;
+}
+#antwoordInput {
+    grid-row: 9;
+}
+#verzendInput {
+    grid-column: 2;
+    grid-row: 11;
+}
+}

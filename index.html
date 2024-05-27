@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander Keen</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="Title1">
+            Deelname prijsvraag - Commander Keen: Goodbye Galaxy!
+        </h1>
+        <p id="Opening">
+            Onlangs is Commander Keen: Goodbye Galaxy! verschenen en dus hebben wij, in samenwerking met id Software een
+            toffe
+            prijsvraag voor jullie. Vanaf nu maak je kans op een van de vier exemplaren van de game. Vul onderstaande
+            gegevens in en
+            geef antwoord op de volgende vraag:
+        </p>
+        <h3 id="Title2">
+            Tegen welk buitenaards ras neemt Commander Keen het op in Goodbye Galaxy!?
+        </h3>
+        <p id="End">
+            Wie weet maak jij kans op een van de vier Limited Edition uitvoeringen van de game Commander Keen: Goodbye
+            Galaxy!
+        </p>
+        <img src="img/commanderkeen.jpg" id="Keen">
+    </div>
+    <form class="formcontainer">
+        <label for="voornaam" class="labelR" id="vnLabel">Voornaam:</label>
+        <input type="text" name="voornaam" class="inputR" required pattern="[a-zA-Z]+">
+        <label for="achternaam" class="labelL" id="anLabel">Achternaam:</label>
+        <input type="text" name="achternaam" class="inputL" required pattern="[a-zA-Z]+">
+        <label for="adres" class="labelR" id="adrLabel">Adres:</label>
+        <input type="text" name="adres" class="inputR" required pattern="^[a-zA-Z\s'’\-]+$">
+        <label for="huisnummer" class="labelL" id="hnLabel">Huisnummer:</label>
+        <input type="number" name="huisnummer" class="inputL" required pattern="[0-9]+">
+        <label for="postcode" class="labelR" id="postLabel">Postcode:</label>
+        <input type="text" name="postcode" class="inputR" required pattern="^[1-9][0-9]{3}\s?[A-Z]{2}$">
+        <label for="stad" class="labelL" id="stadLabel">Stad:</label>
+        <input type="text" name="stad" class="inputL" required pattern="[a-zA-Z]+">
+        <label class="labelR" id="geslachtLabel">Geslacht:</label>
+        <div class="geslachtcont">
+            <input type="radio" name="man" value="man">Man</input>
+            <input type="radio" name="vrouw" value="vrouw">Vrouw</input>
+            <input type="radio" name="overig" value="overig">Overig</input>
+        </div>
+        <label class="labelL" id="gebLabel">Geboortedatum:</label>
+        <div class="geboortedatumcont">
+            <input type="number" name="geboortedag" class="inputL" id="gebdag" required
+                pattern="^(0?[1-9]|[12][0-9]|3[01])$">
+            <select class="inputL" id="gebmaand" required>
+                <option value="Jan">Januari</option>
+                <option value="Feb">Februari</option>
+                <option value="Mar">Maart</option>
+                <option value="Apr">April</option>
+                <option value="Mei">Mei</option>
+                <option value="Jun">Juni</option>
+                <option value="Jul">Juli</option>
+                <option value="Aug">Augustus</option>
+                <option value="Sept">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+            </select>
+            <input type="number" name="geboortejaar" class="inputL" id="gebdatum" required pattern="[0-9]+">
+        </div>
+        <label class="labelR" id="antwLabel">Antwoord:</label>
+        <input type="text" class="inputR" name="antwoord" id="antwoordInput" required>
+        <input type="submit" class="inputL" name="verzenden" id="verzendInput">
+    </form>
+
+</body>
+
+</html>
